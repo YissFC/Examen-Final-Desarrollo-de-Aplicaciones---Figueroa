@@ -106,7 +106,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a id="liInfraccion" href="/infracciones" class="nav-link">
+                  <a id="liInfraccion" href="/infracciones" th:if="${roles.contains('ROLE_ADMIN')} " class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Infracciones</p>
                   </a>
